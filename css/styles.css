@@ -1,0 +1,453 @@
+
+/* A aplicação do asterisco (*) no arquivo de CSS informa ao navegador
+que TODOS os elementos da tela receberão está formatação*/
+*{
+    margin: 0; /*estamos zerando as margens externas dos elementos*/
+    padding: 0; /*estamos zerando as margens internas dos elementos*/
+  }
+  
+  /* Vamos aplicar na tag header cor de fundo e padding*/
+  body{
+    background-color: black;
+  
+  }
+
+  header {
+    background-image: url("../banner.jpg");
+    background-size: 100%;
+    background-position: 0 -200px;
+    padding-top: 150px;
+    transition: ease 1s; /*Efeito de animação com transition. Efeito com ease
+                           com tempo de 2s*/
+    background-size:cover;   
+                        
+  }
+  
+  /* Formatar a tag h1 que está dentro do header. Veja
+  como fazemos*/
+  header h1 {
+    color:goldenrod; /*cor da letra*/
+    font-family: 'Bangers', cursive;    /*mudar o tipo da letra para arial*/
+    text-align: center; /*alinhamento do texto*/
+  }
+  
+  header nav {
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  header nav ul li {
+    /* exibir os itens da lista um ao lado do outro. Usaremos
+    o comando display(tela/exibir) inline-block(blocos em linha)*/
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  header ul li a {
+    color: goldenrod;
+    font-family:'Bangers', cursive;
+    text-decoration: none; /* retirar a decoração do texto, ou seja, tirar o underline*/
+  }
+  
+  header nav ul li a:hover {
+    color:blanchedalmond;
+  }
+  
+
+  /* Início de formatação da página index */
+  main{
+    position: relative;
+    
+  }
+  
+  main section h2{
+   padding-top:200px;
+  }
+  main section img{
+    padding: 38,9px;
+  }
+
+  main #inicial #conteudo{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  main #inicial #inc{
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  main #inicial #inc img{
+      flex: 1;
+      width: 32%;
+      height: auto;
+      margin: 5px;
+  }
+
+ main section h1{
+   font-family:'Bungee', cursive;
+   font-size: 50pt;
+   margin:50px;
+   border-bottom: rgb(0, 0, 0) 1px solid;
+   color: rgb(88, 53, 20);
+   text-align: center;
+   padding: 40px;
+   
+ }
+ main #marcas h2{
+  font-family:'Bungee', cursive;
+  font-size: 50pt;
+  margin:50px;
+  border-bottom: rgb(0, 0, 0) 1px solid;
+  color: rgb(88, 53, 20);
+  text-align: center;
+  
+}
+
+ main p{
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 30px;/*margem na parte inferior de cada parágrafo*/
+   text-align: justify;/*alinhamento do texto justificado*/
+   font-size: 19pt;/*tamanho da letra do texto*/
+   line-height: 18pt;/*altura da linha, que dá um efeito de espaçamento entre linhas*/
+   font-family:'Bangers', cursive; 
+   color: chocolate;
+   text-align: center;
+  }
+  main img{
+    width: 150px;
+    height: 50px;
+    margin: 100px;
+  }
+   
+  main #imghome{
+    text-align: center;
+  }
+
+  main #imghome img{
+    width: 300px; /*largura da imagem*/
+    height: 300px; /*altura da imagem*/
+    /* vamos arredondar os cantos da imagem com o comando
+    border-radius. O valor pode ser em pixel ou porcentagem*/
+    border-radius: 100px;
+    margin: 10px;
+    opacity: 0.6;
+    transition: ease 0.5;
+  }
+  main #imghome img:hover{
+    opacity: 1;
+    transform: scale(1.2)
+  }
+
+ 
+  /* Início da área do footer */
+
+  footer{
+    /* aplicar uma cor de fundo ao rodapé */
+    background-image: url("../banner9.jpg");
+    /* aplicar margem interna */
+    background-size: auto;
+    padding: 5px;
+    padding-bottom: 100px;
+
+     /*Altura do rodapé*/  
+    
+  }
+  /* Para fazer uma formatação em uma tag em que um id definido é necessário que
+  você adicione um sustenido(#) ao início do nome do id. Neste caso
+  nossa div tem id chamado end, então aplicamos desta forma: #end */
+  footer #end{
+    color: rgb(255, 187, 0);
+    font-family: 'Bangers', cursive;
+    font-size: 10pt;
+    float: left;
+    /*border: solid 1px black*/
+  }
+  footer #redes{
+    /* border: solid 1px black; */
+    float: right;
+  }
+  footer #redes a{
+    text-decoration: none;
+  }
+
+  footer #rede a img{
+    width:90px; /*diminuir a largura da imagem*/
+    height:90px; /*diminuir a altura da imagem*/
+    margin:5px;
+    transition: ease .5s;
+  }
+
+  footer #redes a img:hover{
+    /*realizar uma rotação de 360 graus(deg) */
+    transform: rotate(360deg);
+  }
+
+
+
+  /* Fim da formatação da página index   */
+
+  /* Início da formatação da página produtos */
+
+  main #fardos h2, 
+main #bq h2,
+main #lata h2,
+main #energetico h2,
+main #refri h2,
+main #long h2,
+main #drinks h2{
+    font-family:'Bungee', cursive;
+    font-size: 40pt;
+    text-align: center;
+    padding-top: 60px;
+    color:rgb(214, 143, 50)
+  
+}
+
+main #fardos #area{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  border: 1px silver;
+ 
+}
+main #fardos #area div{
+  flex: 1;
+  background-color: black;
+  box-shadow: 2px 2px 3px rgb(179, 142, 22);
+  text-align: center;
+  padding: 40px 0px 100px 0px;
+  margin: 5px;
+ 
+}
+
+main #fardos #area div img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+ 
+}
+
+main #fardos h4{
+  font-family:'Bangers', cursive;
+  font-size: 20px;
+  color: blanchedalmond;
+ 
+}
+
+main #fardos img,
+main #bq img,
+main #lata img,
+main #energetico img,
+main #refri img,
+main #long img,
+main #drinks img{
+  width: 100px; /*largura da imagem*/
+  height: 100px; /*altura da imagem*/
+  /* vamos arredondar os cantos da imagem com o comando
+  border-radius. O valor pode ser em pixel ou porcentagem*/
+  border-radius: 100px;
+  margin: 10px;
+  opacity: 0.6;
+  transition: ease 1;
+}
+
+main #fardos img,
+main #bq img,
+main #lata img,
+main #energetico img,
+main #refri img,
+main #long img,
+main #drinks img:hover{
+  opacity: 1;
+  transform: scale(1.2)
+}
+
+main h2{
+  font-family:'Bungee', cursive;
+  font-size: 40pt;
+  text-align: center;
+  padding-top: 60px;
+  color:rgb(214, 143, 50);
+}
+/* Início da formatção da página contato */
+
+
+main div {
+  font-family:'Bungee', cursive;
+  font-size: 40pt;
+  text-align: center;
+  padding-top: 60px;
+  color:rgb(214, 143, 50)
+}
+main img{
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  text-decoration: none;
+}
+/* fim da formatação da página contato */
+
+/* início da formatção da página localização */
+main h2{
+  font-family:'Bungee', cursive;
+  font-size: 40pt;
+}
+main div #mapa{
+   align-items: center;
+
+}
+
+/* break points para o projeto*/
+
+/* telas de smartphones*/
+@media (min-width: 0px) and (max-width: 575.98px) {
+
+  header h1 {
+    color:goldenrod; /*cor da letra*/
+    font-family: 'Bangers', cursive;    /*mudar o tipo da letra para arial*/
+  }
+  
+  header nav {
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  header nav ul li {
+    /* exibir os itens da lista um ao lado do outro. Usaremos
+    o comando display(tela/exibir) inline-block(blocos em linha)*/
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  header ul li a {
+    color: goldenrod;
+    font-family:'Bangers', cursive;
+    text-decoration: none; /* retirar a decoração do texto, ou seja, tirar o underline*/
+  }
+  
+  header nav ul li a:hover {
+    color:blanchedalmond;
+  }
+ 
+  main section h1{
+    font-family:'Bungee', cursive;
+    font-size: 20pt;
+    margin:50px;
+    border-bottom: rgb(0, 0, 0) 1px solid;
+    color: rgb(88, 53, 20);
+    text-align: center;
+    padding-top: 2px;
+  }
+  main section#marcas h2{
+    font-family:'Bungee', cursive;
+    font-size: 20pt;
+    margin:50px;
+    border-bottom: rgb(0, 0, 0) 1px solid;
+    color: rgb(88, 53, 20);
+    text-align: left;
+    padding-bottom: 50px;
+  }
+
+  main #imghome img{
+    width: 300px; /*largura da imagem*/
+    height: 300px; /*altura da imagem*/
+    /* vamos arredondar os cantos da imagem com o comando
+    border-radius. O valor pode ser em pixel ou porcentagem*/
+    border-radius: 100px;
+    margin: 10px;
+    opacity: 0.6;
+    transition: ease 0.5;
+  }
+
+
+  /* formatação da página produtos */
+
+  main h2{
+      color:goldenrod; /*cor da letra*/
+      font-family: 'Bangers', cursive;    /*mudar o tipo da letra para arial*/
+      font-size: 30pt;
+  }
+  main{
+    margin: auto;
+  }
+  /* formatação da página contato */
+
+  main div {
+    font-family:'Bungee', cursive;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 60px;
+    color:rgb(214, 143, 50)
+  }
+  
+  }
+  
+  /* telas de tablets*/
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  header h1{
+      padding: 0;
+      text-align: center;
+  }
+  main #painel{
+      height: 250px;
+      background-position:0px -80px ;
+  }
+  header nav{
+      background-color: #000;
+      height: 100vh;/* v(viewport(dispositivo que tá abrindo a página)) h(height);
+      100% da altura da tela do dispositivo que abre a tela*/
+      position: fixed;
+      /*fazer a barra iniciar no topo do navegador e do lado de fora
+      a esquerda do navegador*/
+      top: 0px;
+       left: -250px; 
+      width: 200px;
+      padding-top: 100px;
+      text-align: left;
+      transition: ease 0.5s;
+      z-index: 10000;
+  }
+  
+  header nav ul li{
+      display: block;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: #000;
+  }
+  
+  header nav ul li a{
+      color: rgb(214, 143, 50);
+  }
+  header #menu, header nav{
+      display: block;
+  }
+  header #menu{
+      position: fixed;
+      top: 10px;
+      left: 10px;
+  }
+ 
+  
+
+  
+  /* Formatação para a página projetos*/
+  main #fardos,
+  main #bq,
+  main #lata,
+  main #energetico,
+  main #refri,
+  main #long,
+  main #drinks{
+      background-color: rgb(214, 143, 50);
+  }
+  
+  
+  }
+  
+  
